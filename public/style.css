@@ -207,10 +207,6 @@ body {
     padding-left: 1rem;
 }
 
-.cart .empty-cart {
-
-}
-
 .cart > h2 {
     margin-top: 0;
     font-size: 1.25rem;
@@ -365,4 +361,16 @@ body {
     #product-list-bottom > div {
         display: none;
     }
+
+}
+[v-cloak] > * {
+    display: none;
+}
+[v-cloak] > #loading {
+    display: block;
+    padding: 1em;
+
+}
+#loading {
+    display :none;
 }
