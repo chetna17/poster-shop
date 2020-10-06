@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="/public/style.css">
 </head>
 <body>
-<div id="app" v-cloak>
+<!-- <div id="app" v-cloak>
     <div id="loading">LOading ...</div>
     <div class="header">
         <div class="container">
@@ -65,6 +65,16 @@
             <div v-else class="empty-cart">No item in cart</div>
         </div>
     </div>
+</div> -->
+<div id="app">
+    <ol>
+        <todo-item
+        v-for="item in groceryList"
+        v-bind:todo="item"
+        v-bind:key="item.id"
+      ></todo-item>
+        
+    </ol>
 </div>
 <!-- Scripts -->
 <script src="/reload/reload.js"></script>
