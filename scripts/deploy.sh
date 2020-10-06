@@ -1,5 +1,5 @@
 
-echo ""
+echo "test deploy"
 echo "=== Run npm install"
 npm install || exit $?
 echo ok
